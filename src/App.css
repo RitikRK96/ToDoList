@@ -121,12 +121,31 @@ body {
   gap: 5px; /* Reduces button spacing */
 }
 
+/* Completed To-Do Item */
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
 
+/* Mark as Done Button */
+.done-button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
 
-
+.done-button:hover {
+  background: #218838;
+}
 
 /* Delete and Edit buttons */
-.delete-button, .edit-button {
+.delete-button,
+.edit-button {
   background: #ff4d4d;
   color: white;
   border: none;

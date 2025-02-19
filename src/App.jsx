@@ -21,7 +21,7 @@ const App = () => {
         setIsEditing(false);
         setEditId(null);
       } else {
-        setTodos([...todos, { id: Date.now(), text: inputValue }]);
+        setTodos([...todos, { id: Date.now(), text: inputValue, completed: false }]);
       }
       setInputValue("");
     }
@@ -35,6 +35,12 @@ const App = () => {
     setIsEditing(true);
     setEditId(id);
     setInputValue(text);
+  };
+
+  const toggleComplete = (id) => {
+    setTodos(todos.map(todo =>
+      todo.id === id ? { ...todo, completed: !todo.completed } : todo
+    ));
   };
 
   return (
@@ -54,17 +60,19 @@ const App = () => {
       </form>
 
       <ul className="todo-list">
-  {todos.map((todo) => (
-    <li key={todo.id} className="todo-item">
-      <span className="todo-text">{todo.text}</span>
-      <div className="todo-actions">
-        <button className="edit-button" onClick={() => handleEdit(todo.id, todo.text)}>✏️</button>
-        <button className="delete-button" onClick={() => handleDelete(todo.id)}>❌</button>
-      </div>
-    </li>
-  ))}
-</ul>
-
+        {todos.map((todo) => (
+          <li key={todo.id} className={`todo-item ${todo.completed ? "completed" : ""}`}>
+            <span className="todo-text">{todo.text}</span>
+            <div className="todo-actions">
+              <button className="done-button" onClick={() => toggleComplete(todo.id)}>
+                {todo.completed ? "✅" : "✔️"}
+              </button>
+              <button className="edit-button" onClick={() => handleEdit(todo.id, todo.text)}>✏️</button>
+              <button className="delete-button" onClick={() => handleDelete(todo.id)}>❌</button>
+            </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
