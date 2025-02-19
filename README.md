@@ -14,7 +14,8 @@ A **simple yet efficient To-Do List App** built using **React.js** and **CSS**. 
 ---
 
 ## 📸 **Preview**  
-![To-Do App Screenshot](./Screenshots/Screenshot%202025-02-19%20175010.png) (./Screenshots/Screenshot%202025-02-19%20175025.png)  
+![To-Do App Screenshot](./Screenshots/Screenshot%202025-02-19%20175010.png)   
+![To-Do App Screenshot](./Screenshots/Screenshot%202025-02-19%20175025.png)  
 
 ---
 
