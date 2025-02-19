@@ -1,0 +1,179 @@
+/* Reset default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Center the body content */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f4f4f4; /* Light gray background */
+  margin: 0;
+  font-family: "Balooza", cursive;
+  color: black;
+}
+
+/* Center the To-Do container */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); /* Adds depth */
+  min-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+/* Title */
+.todo-container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Styling for the form */
+.todo-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  justify-content: center;
+}
+
+/* Input field styling */
+.todo-input {
+  padding: 10px;
+  width: 65%;
+  border: 2px solid #3f43b8;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Calibri", "Trebuchet MS", sans-serif;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+.todo-input:focus {
+  border-color: #4e54c8;
+}
+
+/* Button styling */
+.todo-button {
+  background: #484c96;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease-in-out;
+}
+
+.todo-button:hover {
+  background: #4e54c8;
+}
+
+/* List styling */
+.todo-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.todo-item {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between; /* Ensures buttons on the left and text on the right */
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.todo-text {
+  flex: 1;
+  text-align: left; /* Aligns the text to the right */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-left: 5px;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 5px; /* Reduces button spacing */
+}
+
+
+
+
+
+/* Delete and Edit buttons */
+.delete-button, .edit-button {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 14px;
+  transition: background 0.3s ease-in-out;
+}
+
+.edit-button {
+  background: #00a86b;
+}
+
+.delete-button:hover {
+  background: #cc0000;
+}
+
+.edit-button:hover {
+  background: #008b5e;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 500px) {
+  .todo-container {
+    padding: 20px;
+  }
+
+  .todo-form {
+    flex-direction: column;
+  }
+
+  .todo-input {
+    width: 100%;
+  }
+
+  .todo-button {
+    width: 100%;
+  }
+
+  .todo-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .todo-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
