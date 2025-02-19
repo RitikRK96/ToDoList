@@ -1,6 +1,14 @@
+Your README looks great! Since you've hosted the app on Vercel, it's a good idea to include a **"Live Demo"** section at the top so visitors can quickly access it. Here’s an improved version with the live demo link and minor refinements:  
+
+---
+
 # 📝 **To-Do List App**  
 
 A **simple yet efficient To-Do List App** built using **React.js** and **CSS**. This app helps users to manage their daily tasks with features like **adding, editing, deleting, and marking tasks as complete**.  
+
+🚀 **Live Demo:** [Try it here!](https://to-do-list-delta-henna.vercel.app/)  
+
+---
 
 ## 🌟 **Features**  
 
@@ -50,7 +58,7 @@ This project is built with:
 
 ### 1️⃣ **Clone the Repository**  
 ```bash
-git clone https://github.com/your-github-username/todo-list-app.git
+git clone https://github.com/RitikRK96/todo-list-app.git
 cd todo-list-app
 ```
 
@@ -109,7 +117,7 @@ Want to improve this project? Here's how:
 
 ## 🔗 **Connect with Me**  
 🔹 **LinkedIn:** [Ritik Kumar](https://www.linkedin.com/in/ritik-kumar-34ab70218)  
-🔹 **GitHub:** [Your GitHub](https://github.com/RitikRK96)  
+🔹 **GitHub:** [RitikRK96](https://github.com/RitikRK96)  
 
 ---
 
@@ -117,4 +125,3 @@ Want to improve this project? Here's how:
 If you found this project helpful, **star** ⭐ the repository on GitHub! 🚀🔥  
 
 ---
-
