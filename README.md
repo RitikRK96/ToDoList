@@ -32,7 +32,6 @@ This project is built with:
 - **⚛️ React.js** – Component-based frontend framework  
 - **🎨 CSS** – Styled for a sleek and clean UI  
 - **⚡ Vite** – Blazing fast build tool  
-- **📦 Node.js & npm** – Package management  
 
 ---
 
