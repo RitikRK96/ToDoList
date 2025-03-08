@@ -1,4 +1,3 @@
-Your README looks great! Since you've hosted the app on Vercel, it's a good idea to include a **"Live Demo"** section at the top so visitors can quickly access it. Here’s an improved version with the live demo link and minor refinements:  
 
 ---
 
